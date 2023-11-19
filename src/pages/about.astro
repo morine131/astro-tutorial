@@ -1,5 +1,6 @@
 ---
-
+import "../styles/global.css"
+const title = "About!"
 ---
 
 <html lang="en">
@@ -9,12 +10,18 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>About</title>
+        <style>
+            h1 {
+              color: purple;
+              font-size: 4rem;
+            }
+          </style>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/blog">Blog</a>
-		<h1>About</h1>
+		<h1>{title}</h1>
         <p>first content</p>
         <p>second content</p>
 	</body>
